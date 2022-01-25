@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FE6BB15EDFDB8891D447BFE /* Pods_fire2RTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */; };
+		3787E98627A0869B00CF7B3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3787E98527A0869B00CF7B3B /* GoogleService-Info.plist */; };
 		37F4BC5B2797D44B00881D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5A2797D44B00881D89 /* AppDelegate.swift */; };
 		37F4BC5D2797D44B00881D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */; };
-		37F4BC5F2797D44B00881D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5E2797D44B00881D89 /* ViewController.swift */; };
+		37F4BC5F2797D44B00881D89 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5E2797D44B00881D89 /* WelcomeViewController.swift */; };
 		37F4BC622797D44B00881D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC602797D44B00881D89 /* Main.storyboard */; };
 		37F4BC642797D44D00881D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC632797D44D00881D89 /* Assets.xcassets */; };
 		37F4BC672797D44D00881D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC652797D44D00881D89 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3787E98527A0869B00CF7B3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37F4BC572797D44B00881D89 /* fire2RTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fire2RTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F4BC5A2797D44B00881D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37F4BC5E2797D44B00881D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37F4BC5E2797D44B00881D89 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		37F4BC612797D44B00881D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37F4BC632797D44D00881D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F4BC662797D44D00881D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F4BC682797D44D00881D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fire2RTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.release.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.release.xcconfig"; sourceTree = "<group>"; };
+		7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.debug.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,183 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE6BB15EDFDB8891D447BFE /* Pods_fire2RTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3787E96F27A0814500CF7B3B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				37F4BC5A2797D44B00881D89 /* AppDelegate.swift */,
+				37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3787E97027A0815200CF7B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3787E97127A0815700CF7B3B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3787E97527A081F100CF7B3B /* WelcomePage */,
+				3787E97727A0820300CF7B3B /* RegisterPage */,
+				3787E97627A081FB00CF7B3B /* LoginPage */,
+				3787E97827A0822C00CF7B3B /* MainPage */,
+				3787E97427A081EA00CF7B3B /* CallPage */,
+				3787E98027A083F800CF7B3B /* ContactPage */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3787E97227A0816300CF7B3B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3787E97327A0817A00CF7B3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3787E98527A0869B00CF7B3B /* GoogleService-Info.plist */,
+				37F4BC652797D44D00881D89 /* LaunchScreen.storyboard */,
+				37F4BC632797D44D00881D89 /* Assets.xcassets */,
+				37F4BC682797D44D00881D89 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3787E97427A081EA00CF7B3B /* CallPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CallPage;
+			sourceTree = "<group>";
+		};
+		3787E97527A081F100CF7B3B /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3787E97927A0826700CF7B3B /* View */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		3787E97627A081FB00CF7B3B /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				3787E97D27A0839800CF7B3B /* ViewModel */,
+				3787E97C27A0839400CF7B3B /* View */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		3787E97727A0820300CF7B3B /* RegisterPage */ = {
+			isa = PBXGroup;
+			children = (
+				3787E97B27A0838A00CF7B3B /* ViewModel */,
+				3787E97A27A0838300CF7B3B /* View */,
+			);
+			path = RegisterPage;
+			sourceTree = "<group>";
+		};
+		3787E97827A0822C00CF7B3B /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				3787E97F27A083D200CF7B3B /* ViewModel */,
+				3787E97E27A083C500CF7B3B /* View */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		3787E97927A0826700CF7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37F4BC5E2797D44B00881D89 /* WelcomeViewController.swift */,
+				37F4BC602797D44B00881D89 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3787E97A27A0838300CF7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3787E97B27A0838A00CF7B3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3787E97C27A0839400CF7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3787E97D27A0839800CF7B3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3787E97E27A083C500CF7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3787E97F27A083D200CF7B3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3787E98027A083F800CF7B3B /* ContactPage */ = {
+			isa = PBXGroup;
+			children = (
+				3787E98227A0841F00CF7B3B /* ViewModel */,
+				3787E98127A0841A00CF7B3B /* View */,
+			);
+			path = ContactPage;
+			sourceTree = "<group>";
+		};
+		3787E98127A0841A00CF7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3787E98227A0841F00CF7B3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		37F4BC4E2797D44B00881D89 = {
 			isa = PBXGroup;
 			children = (
 				37F4BC592797D44B00881D89 /* fire2RTC */,
 				37F4BC582797D44B00881D89 /* Products */,
+				FA6BFF486C7F0C4A8158213F /* Pods */,
+				89C19ED40D41EBC1D23162EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +228,31 @@
 		37F4BC592797D44B00881D89 /* fire2RTC */ = {
 			isa = PBXGroup;
 			children = (
-				37F4BC5A2797D44B00881D89 /* AppDelegate.swift */,
-				37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */,
-				37F4BC5E2797D44B00881D89 /* ViewController.swift */,
-				37F4BC602797D44B00881D89 /* Main.storyboard */,
-				37F4BC632797D44D00881D89 /* Assets.xcassets */,
-				37F4BC652797D44D00881D89 /* LaunchScreen.storyboard */,
-				37F4BC682797D44D00881D89 /* Info.plist */,
+				3787E96F27A0814500CF7B3B /* Application */,
+				3787E97027A0815200CF7B3B /* Model */,
+				3787E97127A0815700CF7B3B /* Presentation */,
+				3787E97227A0816300CF7B3B /* Infrastructure */,
+				3787E97327A0817A00CF7B3B /* Resources */,
 			);
 			path = fire2RTC;
+			sourceTree = "<group>";
+		};
+		89C19ED40D41EBC1D23162EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA6BFF486C7F0C4A8158213F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */,
+				62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F4BC6B2797D44D00881D89 /* Build configuration list for PBXNativeTarget "fire2RTC" */;
 			buildPhases = (
+				F45F1F2063E87CDCB570E769 /* [CP] Check Pods Manifest.lock */,
 				37F4BC532797D44B00881D89 /* Sources */,
 				37F4BC542797D44B00881D89 /* Frameworks */,
 				37F4BC552797D44B00881D89 /* Resources */,
+				9B3861C6AAE525F78E75F6AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F4BC672797D44D00881D89 /* LaunchScreen.storyboard in Resources */,
+				3787E98627A0869B00CF7B3B /* GoogleService-Info.plist in Resources */,
 				37F4BC642797D44D00881D89 /* Assets.xcassets in Resources */,
 				37F4BC622797D44B00881D89 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +324,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B3861C6AAE525F78E75F6AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45F1F2063E87CDCB570E769 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fire2RTC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37F4BC532797D44B00881D89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F4BC5F2797D44B00881D89 /* ViewController.swift in Sources */,
+				37F4BC5F2797D44B00881D89 /* WelcomeViewController.swift in Sources */,
 				37F4BC5B2797D44B00881D89 /* AppDelegate.swift in Sources */,
 				37F4BC5D2797D44B00881D89 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +517,7 @@
 		};
 		37F4BC6C2797D44D00881D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +525,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AW9NM6R76U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fire2RTC/Info.plist;
+				INFOPLIST_FILE = fire2RTC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,6 +546,7 @@
 		};
 		37F4BC6D2797D44D00881D89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +554,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AW9NM6R76U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = fire2RTC/Info.plist;
+				INFOPLIST_FILE = fire2RTC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
