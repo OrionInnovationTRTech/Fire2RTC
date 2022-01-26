@@ -55,6 +55,7 @@
 		3787E99927A0929000CF7B3B /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		3787E9A027A0947200CF7B3B /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		3787E9A227A0949700CF7B3B /* CallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewModel.swift; sourceTree = "<group>"; };
+		37EB961327A0F0DE00FB2D4F /* fire2RTC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fire2RTC.entitlements; sourceTree = "<group>"; };
 		37F4BC572797D44B00881D89 /* fire2RTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fire2RTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F4BC5A2797D44B00881D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -306,6 +307,7 @@
 		37F4BC592797D44B00881D89 /* fire2RTC */ = {
 			isa = PBXGroup;
 			children = (
+				37EB961327A0F0DE00FB2D4F /* fire2RTC.entitlements */,
 				3787E96F27A0814500CF7B3B /* Application */,
 				3787E97027A0815200CF7B3B /* Model */,
 				3787E97127A0815700CF7B3B /* Presentation */,
@@ -616,6 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fire2RTC/fire2RTC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AW9NM6R76U;
@@ -645,6 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = fire2RTC/fire2RTC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AW9NM6R76U;
