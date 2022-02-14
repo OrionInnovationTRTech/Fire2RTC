@@ -1,6 +1,0 @@
-framework module Pods_fire2RTC {
-  umbrella header "Pods-fire2RTC-umbrella.h"
-
-  export *
-  module * { export * }
-}

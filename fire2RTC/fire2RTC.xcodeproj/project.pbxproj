@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FE6BB15EDFDB8891D447BFE /* Pods_fire2RTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */; };
 		370732D627A0972700B27CCF /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370732D527A0972700B27CCF /* CallViewController.swift */; };
 		370732D827A0973600B27CCF /* CallViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370732D727A0973600B27CCF /* CallViewController.storyboard */; };
 		370732DA27A0975C00B27CCF /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370732D927A0975C00B27CCF /* ContactViewController.swift */; };
@@ -64,9 +63,6 @@
 		37F4BC632797D44D00881D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F4BC662797D44D00881D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F4BC682797D44D00881D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fire2RTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.release.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.release.xcconfig"; sourceTree = "<group>"; };
-		7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.debug.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FE6BB15EDFDB8891D447BFE /* Pods_fire2RTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +287,6 @@
 				37F4BC592797D44B00881D89 /* fire2RTC */,
 				37F4BC582797D44B00881D89 /* Products */,
 				FA6BFF486C7F0C4A8158213F /* Pods */,
-				89C19ED40D41EBC1D23162EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,19 +311,9 @@
 			path = fire2RTC;
 			sourceTree = "<group>";
 		};
-		89C19ED40D41EBC1D23162EB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FA6BFF486C7F0C4A8158213F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */,
-				62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -341,11 +325,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F4BC6B2797D44D00881D89 /* Build configuration list for PBXNativeTarget "fire2RTC" */;
 			buildPhases = (
-				F45F1F2063E87CDCB570E769 /* [CP] Check Pods Manifest.lock */,
 				37F4BC532797D44B00881D89 /* Sources */,
 				37F4BC542797D44B00881D89 /* Frameworks */,
 				37F4BC552797D44B00881D89 /* Resources */,
-				9B3861C6AAE525F78E75F6AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,48 +389,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9B3861C6AAE525F78E75F6AD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fire2RTC/Pods-fire2RTC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F45F1F2063E87CDCB570E769 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fire2RTC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37F4BC532797D44B00881D89 /* Sources */ = {
@@ -614,7 +554,6 @@
 		};
 		37F4BC6C2797D44D00881D89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -644,7 +583,6 @@
 		};
 		37F4BC6D2797D44D00881D89 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
