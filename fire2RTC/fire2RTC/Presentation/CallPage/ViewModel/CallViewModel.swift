@@ -1,3 +1,4 @@
+
 //
 //  CallViewModel.swift
 //  fire2RTC
@@ -6,8 +7,13 @@
 //
 
 import Foundation
+import Firebase
+import CallKit
+import AVFoundation
+import WebRTC
+import PushKit
 
-struct CallViewModel {
+class CallViewModel : NSObject {
     
     var name: String!
     var uid : String!
@@ -18,4 +24,6 @@ struct CallViewModel {
         self.uid = user.uid
         self.user = user
     }
+    
 }
+

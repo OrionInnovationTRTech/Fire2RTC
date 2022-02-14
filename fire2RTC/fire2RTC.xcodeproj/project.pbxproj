@@ -27,12 +27,20 @@
 		3787E99A27A0929000CF7B3B /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787E99927A0929000CF7B3B /* MainViewController.storyboard */; };
 		3787E9A127A0947200CF7B3B /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3787E9A027A0947200CF7B3B /* ContactViewController.storyboard */; };
 		3787E9A327A0949700CF7B3B /* CallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3787E9A227A0949700CF7B3B /* CallViewModel.swift */; };
+		37EB961827A110BE00FB2D4F /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB961727A110BE00FB2D4F /* RTCStates.swift */; };
+		37EB961A27A110D300FB2D4F /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB961927A110D300FB2D4F /* SessionDescription.swift */; };
+		37EB961C27A110EF00FB2D4F /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB961B27A110EF00FB2D4F /* WebRTCClient.swift */; };
+		37EB962227A1317700FB2D4F /* FirebaseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB962127A1317700FB2D4F /* FirebaseFunction.swift */; };
+		37EB962427A1351C00FB2D4F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EB962327A1351C00FB2D4F /* Request.swift */; };
 		37F4BC5B2797D44B00881D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5A2797D44B00881D89 /* AppDelegate.swift */; };
 		37F4BC5D2797D44B00881D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */; };
 		37F4BC5F2797D44B00881D89 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F4BC5E2797D44B00881D89 /* WelcomeViewController.swift */; };
 		37F4BC622797D44B00881D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC602797D44B00881D89 /* Main.storyboard */; };
 		37F4BC642797D44D00881D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC632797D44D00881D89 /* Assets.xcassets */; };
 		37F4BC672797D44D00881D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F4BC652797D44D00881D89 /* LaunchScreen.storyboard */; };
+		37F6F4C727A34D1A00E9004A /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6F4C627A34D1A00E9004A /* Call.swift */; };
+		37F6F4C927A34DA100E9004A /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6F4C827A34DA100E9004A /* CallManager.swift */; };
+		37F6F4CB27A34E3500E9004A /* ProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6F4CA27A34E3500E9004A /* ProviderDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +64,11 @@
 		3787E9A027A0947200CF7B3B /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
 		3787E9A227A0949700CF7B3B /* CallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewModel.swift; sourceTree = "<group>"; };
 		37EB961327A0F0DE00FB2D4F /* fire2RTC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fire2RTC.entitlements; sourceTree = "<group>"; };
+		37EB961727A110BE00FB2D4F /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
+		37EB961927A110D300FB2D4F /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		37EB961B27A110EF00FB2D4F /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
+		37EB962127A1317700FB2D4F /* FirebaseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFunction.swift; sourceTree = "<group>"; };
+		37EB962327A1351C00FB2D4F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		37F4BC572797D44B00881D89 /* fire2RTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fire2RTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F4BC5A2797D44B00881D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F4BC5C2797D44B00881D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +77,9 @@
 		37F4BC632797D44D00881D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F4BC662797D44D00881D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F4BC682797D44D00881D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F6F4C627A34D1A00E9004A /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		37F6F4C827A34DA100E9004A /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		37F6F4CA27A34E3500E9004A /* ProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDelegate.swift; sourceTree = "<group>"; };
 		58FC92E5E920BB1E7F840E74 /* Pods_fire2RTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fire2RTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D4FFECDCF1720D36602CBD /* Pods-fire2RTC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.release.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.release.xcconfig"; sourceTree = "<group>"; };
 		7EF466813672F4CE2BE7C428 /* Pods-fire2RTC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fire2RTC.debug.xcconfig"; path = "Target Support Files/Pods-fire2RTC/Pods-fire2RTC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				370732DB27A097DA00B27CCF /* User.swift */,
+				37EB962327A1351C00FB2D4F /* Request.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,8 +122,8 @@
 				3787E97727A0820300CF7B3B /* RegisterPage */,
 				3787E97627A081FB00CF7B3B /* LoginPage */,
 				3787E97827A0822C00CF7B3B /* MainPage */,
-				3787E97427A081EA00CF7B3B /* CallPage */,
 				3787E98027A083F800CF7B3B /* ContactPage */,
+				3787E97427A081EA00CF7B3B /* CallPage */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -114,6 +131,7 @@
 		3787E97227A0816300CF7B3B /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				37EB961427A1108A00FB2D4F /* Network */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -286,6 +304,52 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		37EB961427A1108A00FB2D4F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				37EB962027A1313E00FB2D4F /* FirebaseFunction */,
+				37EB961D27A1236900FB2D4F /* CallKit */,
+				37EB961527A1109900FB2D4F /* WebRTC */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		37EB961527A1109900FB2D4F /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				37EB961B27A110EF00FB2D4F /* WebRTCClient.swift */,
+				37EB961627A110A500FB2D4F /* DataMapping */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		37EB961627A110A500FB2D4F /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				37EB961727A110BE00FB2D4F /* RTCStates.swift */,
+				37EB961927A110D300FB2D4F /* SessionDescription.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		37EB961D27A1236900FB2D4F /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				37F6F4C627A34D1A00E9004A /* Call.swift */,
+				37F6F4C827A34DA100E9004A /* CallManager.swift */,
+				37F6F4CA27A34E3500E9004A /* ProviderDelegate.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
+		37EB962027A1313E00FB2D4F /* FirebaseFunction */ = {
+			isa = PBXGroup;
+			children = (
+				37EB962127A1317700FB2D4F /* FirebaseFunction.swift */,
+			);
+			path = FirebaseFunction;
+			sourceTree = "<group>";
+		};
 		37F4BC4E2797D44B00881D89 = {
 			isa = PBXGroup;
 			children = (
@@ -456,9 +520,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				370732DC27A097DA00B27CCF /* User.swift in Sources */,
+				37F6F4C727A34D1A00E9004A /* Call.swift in Sources */,
 				370732D627A0972700B27CCF /* CallViewController.swift in Sources */,
+				37F6F4C927A34DA100E9004A /* CallManager.swift in Sources */,
+				37F6F4CB27A34E3500E9004A /* ProviderDelegate.swift in Sources */,
 				3787E99227A090F500CF7B3B /* LoginViewController.swift in Sources */,
+				37EB961827A110BE00FB2D4F /* RTCStates.swift in Sources */,
 				37F4BC5F2797D44B00881D89 /* WelcomeViewController.swift in Sources */,
+				37EB961C27A110EF00FB2D4F /* WebRTCClient.swift in Sources */,
 				3787E98A27A08B0800CF7B3B /* RegisterViewController.swift in Sources */,
 				3787E99027A090E000CF7B3B /* LoginViewModel.swift in Sources */,
 				370732DA27A0975C00B27CCF /* ContactViewController.swift in Sources */,
@@ -466,7 +535,10 @@
 				370732E227A09B1800B27CCF /* UserCell.swift in Sources */,
 				37F4BC5B2797D44B00881D89 /* AppDelegate.swift in Sources */,
 				37F4BC5D2797D44B00881D89 /* SceneDelegate.swift in Sources */,
+				37EB962227A1317700FB2D4F /* FirebaseFunction.swift in Sources */,
+				37EB962427A1351C00FB2D4F /* Request.swift in Sources */,
 				370732DE27A099F600B27CCF /* UserCellViewModel.swift in Sources */,
+				37EB961A27A110D300FB2D4F /* SessionDescription.swift in Sources */,
 				3787E99827A0928400CF7B3B /* MainViewController.swift in Sources */,
 				3787E98827A08AE400CF7B3B /* RegisterViewModel.swift in Sources */,
 				3787E99627A0927100CF7B3B /* MainViewModel.swift in Sources */,

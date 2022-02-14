@@ -27,6 +27,7 @@ final class WebRTCClient: NSObject {
     private var remoteVideoTrack: RTCVideoTrack?
     private var localDataChannel: RTCDataChannel?
     private var remoteDataChannel: RTCDataChannel?
+    private var iceServers: [String] = []
     
     
     override init(){
@@ -36,7 +37,7 @@ final class WebRTCClient: NSObject {
     
     func createPeerConnection() {
         let config = RTCConfiguration()
-        
+        config.iceServers = [RTCIceServer(urlStrings: iceServers)]
         config.sdpSemantics = .unifiedPlan
         config.continualGatheringPolicy = .gatherContinually
         

@@ -2,19 +2,26 @@
 import UIKit
 import Firebase
 import PushKit
+import WebRTC
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let window = UIWindow(frame: UIScreen.main.bounds)
+    let callManager = CallManager()
+    var providerDelegate: ProviderDelegate!
     var deviceToken : String?
     var tokenTimer:Timer!
+    
+    class var shared: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
         self.voipRegistration()
-        
+        providerDelegate = ProviderDelegate(callManager: callManager)
         return true
     }
     
@@ -61,6 +68,31 @@ extension AppDelegate : PKPushRegistryDelegate {
     
     func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
         
+        defer {
+            completion()
+        }
+        
+        guard type == .voIP,
+              
+              let callerName = payload.dictionaryPayload["calleeName"] as? String,
+              let sdp = payload.dictionaryPayload["sdp"] as? RTCSessionDescription,
+              let handle = payload.dictionaryPayload["callerName"] as? String
+                
+        else {
+            return
+        }
+        settingRemoteSdp(sdp: sdp) {
+            self.displayIncomingCall(name: handle,callerName: callerName )
+        }
+    }
+    
+    func displayIncomingCall(name: String ,callerName: String) {
+        providerDelegate?.incomingCall(handle: name, hasVideo: false, callerName: callerName)
+    }
+    func settingRemoteSdp(sdp : RTCSessionDescription, handler: @escaping () -> Void) {
+        callManager.webRTCClient.set(remoteSdp: sdp) { error in
+            print(error)
+        }
     }
 }
 
